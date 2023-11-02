@@ -1,0 +1,223 @@
+$cvert : #367433;
+$cmarron : #89601e;
+$noirounet : #020202;
+$fond : #f1f0f0;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.row-limit-size {
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+a,
+ul,
+li,
+label {
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+
+
+button {
+    outline: transparent;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/****************CSS*DESKTOP*********/
+/*header*/
+header {
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/branche-fond.png');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &>#logo-lien-accueil {
+        background-color: white;
+
+        &>.logo {
+            width: 300px;
+            height: 200px;
+        }
+    }
+
+    &>#menus {
+
+        &>ul {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+
+            &>li {
+
+                margin: 0 15px;
+
+                &>a {
+                    width: 100%;
+                    height: 200px;
+                    background-color: white;
+                    text-transform: uppercase;
+                    color: $cvert ;
+                    font-size: 1.2em;
+                }
+
+                &>a:hover {
+                    border-bottom: 1px solid $cmarron;
+                }
+            }
+        }
+    }
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $fond;
+
+
+
+    &>#footer-droit {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+
+        &>#carte-de-visite {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &>#partie1 {
+                &>h4 {
+                    color: $cvert;
+                }
+
+                &>p {
+                    width: 200px;
+                    color: $cmarron;
+                }
+            }
+
+            &>#partie2 {
+                &>h4 {
+                    color: $cvert;
+                }
+
+                &>p {
+                    width: 200px;
+                    color: $cmarron;
+                }
+
+                &>a {
+
+                    &>button {
+                        width: 100px;
+                        height: 25px;
+                        background-color: $cvert;
+                        color: white;
+                    }
+                }
+
+
+            }
+
+            &>#partie3 {
+                &>h4 {
+                    color: $cvert;
+
+                }
+
+                &>p {
+                    width: 200px;
+                    color: $cmarron;
+                }
+            }
+        }
+
+        &>#mentions {
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            &>h6 {
+                color: $cmarron;
+            }
+
+            &>a {
+                color: $cmarron;
+            }
+
+            &>p {
+                color: $cmarron;
+            }
+
+            &>img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+/*section-accueil*/
+#accueil {
+    
+
+        &>.carousel-content {
+            width: 100%;
+
+            &>.first-child {
+                width: 100%;
+                background: url('../img/accueil/sliders-accueil/slide-1/gazon.mp4') no-repeat;
+                background-size: cover;
+            }
+        }
+    
+
+
+
+    &>#presentation {
+        width: 100%;
+        display: flex;
+        background-image: url('../img/brown-point-fond.png');
+
+        &>#bio {
+            width: 50%;
+            border: 1px solid $cvert;
+
+            &>#prez {
+                color: $cvert;
+            }
+        }
+
+        &>#illustrations {
+            width: 50%;
+            border: 1px solid $cvert;
+
+
+        }
+    }
+}

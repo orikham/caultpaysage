@@ -1,7 +1,62 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{% block title %}CaultPaysages-Accueil
+{% endblock %}
 
 {% block body %}
-pouet
-{% endblock %}
+	{% block content %}
+
+		<section id="accueil" class="row-limit-size">
+			
+				<div class="carousel-content">
+
+					<div class="carouselItem first-child">
+						<div id="slide1">
+							<img class="logo" src="{{ asset('asset/img/icone/logo.jpg') }}" alt="logo du site">
+							<h3>Tonte, taille, jardinage, terrasse en bois</h3>
+							<h4>Pizay et ses environs</h4>
+							<p>Besoin d’un jardinier ? Vous souhaitez aménagés une terrasse ? Besoin d’un rafraichissement ? Cault Paysage votre solution</p>
+
+
+						</div>
+
+						<div class="carouselItem second-child">
+							<div id="slide2">
+								<div>
+									<img src="{{ asset('asset/img/sliders-accueil/slide-2/top-left.png') }}" alt="">
+									<img src="{{ asset('asset/img/sliders-accueil/slide-2/bot-left.jpg') }}" alt="">
+								</div>
+								<div>
+									<img src="{{ asset('asset/img/sliders-accueil/slide-2/middle.png') }}" alt="">
+								</div>
+								<div>
+									<img src="{{ asset('asset/img/sliders-accueil/slide-2/top-right.jpg') }}" alt="">
+									<img src="{{ asset('asset/img/sliders-accueil/slide-2/bot-right.jpg') }}" alt="">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="carouselItem last-child">
+							<div id="slide3"></div>
+
+						</div>
+
+
+					</div>
+				</div>
+
+				<div id="presentation">
+					<div id="bio">
+						<p id="prez">Je suis Christophe Cault, un professionnel de l'aménagement paysager titulaire un BP. Passionné par la nature, je travaille pour concrétiser vos idées. Que ce soit pour l'entretien de votre jardin, sa rénovation ou la création d'un nouvel espace vert, mon objectif est de vous satistfaire. Votre jardin, c'est votre coin de bonheur. Paysagiste certifié je suis là pour en faire un lieu où vous pourrez vous détendre, créer des souvenirs et vous echapper du quotidien. Je m’engage à écouter vos besoins,à être crétif et à rendre votre espace extérieur magnifique. Si vous cherchez à transformer votre jardin en un espace de rêves qui vous ressemble, je suis là pour vous accompagner dans cette aventure</p>
+					</div>
+					<div id="illustrations"></div>
+
+				</div>
+
+
+			</section>
+
+
+		{% endblock %}
+	{% endblock %}
