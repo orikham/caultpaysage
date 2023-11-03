@@ -1,3 +1,4 @@
+/******RESET*****/
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +10,7 @@
   margin: 50px auto;
 }
 
-a,
-ul,
-li,
-label {
+a, ul, li, label {
   text-decoration: none;
   list-style: none;
 }
@@ -130,17 +128,66 @@ footer > #footer-droit > #mentions > img {
 
 /*section-accueil*/
 #accueil > .carousel-content {
-  width: 100%;
+  display: flex;
 }
 #accueil > .carousel-content > .first-child {
   width: 100%;
-  background: url("../img/accueil/sliders-accueil/slide-1/gazon.mp4") no-repeat;
-  background-size: cover;
+}
+#accueil > .carousel-content > .first-child > #slide1 {
+  width: 100%;
+}
+#accueil > .carousel-content > .first-child > #slide1 > source {
+  width: 1200px;
+}
+#accueil > .carousel-content > .first-child > #slide1 > aside {
+  width: 500px;
+  height: 300px;
+  background-color: #d9d9d9;
+  z-index: 10000;
+}
+#accueil > .carousel-content > .first-child > #slide1 > aside > .logo {
+  width: 150px;
+  height: 100px;
+}
+#accueil > .carousel-content > .second-child {
+  width: 100%;
+}
+#accueil > .carousel-content > .second-child > #slide2 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+#accueil > .carousel-content > .second-child > #slide2 > #slide2-left {
+  width: 400px;
+}
+#accueil > .carousel-content > .second-child > #slide2 > #slide2-left > img {
+  width: 400px;
+}
+#accueil > .carousel-content > .second-child > #slide2 > #slide2-middle {
+  width: 400px;
+}
+#accueil > .carousel-content > .second-child > #slide2 > #slide2-middle > img {
+  width: 400px;
+  height: 100%;
+  border-bottom: 4px solid #367433;
+}
+#accueil > .carousel-content > .second-child > #slide2 > #slide2-right {
+  width: 400px;
+}
+#accueil > .carousel-content > .second-child > #slide2 > #slide2-right > img {
+  width: 400px;
+}
+#accueil > .carousel-content > .last-child {
+  width: 100%;
+}
+#accueil > .carousel-content > .last-child > #slide3 {
+  width: 100%;
 }
 #accueil > #presentation {
   width: 100%;
   display: flex;
   background-image: url("../img/brown-point-fond.png");
+  margin-top: 50px;
 }
 #accueil > #presentation > #bio {
   width: 50%;

@@ -2,15 +2,13 @@ $cvert : #367433;
 $cmarron : #89601e;
 $noirounet : #020202;
 $fond : #f1f0f0;
+$cardSlide : #d9d9d9;
 
-
+/******RESET*****/
 * {
     margin: 0;
     padding: 0;
 }
-
-
-
 
 .row-limit-size {
     max-width: 1200px;
@@ -18,17 +16,12 @@ $fond : #f1f0f0;
     margin: 50px auto;
 }
 
-a,
-ul,
-li,
-label {
+a,ul,li,label {
     text-decoration: none;
     list-style: none;
 
 
 }
-
-
 
 button {
     outline: transparent;
@@ -184,25 +177,97 @@ footer {
 
 /*section-accueil*/
 #accueil {
-    
 
-        &>.carousel-content {
+    &>.carousel-content {
+
+        display: flex;
+
+        &>.first-child {
             width: 100%;
+            // background: url('../img/accueil/sliders-accueil/slide-1/gazon.mp4') no-repeat;
+            // background-size: cover;
 
-            &>.first-child {
+            &>#slide1 {
                 width: 100%;
-                background: url('../img/accueil/sliders-accueil/slide-1/gazon.mp4') no-repeat;
-                background-size: cover;
+
+                &>source {
+                    width: 1200px;
+                }
+
+
+                &>aside {
+                    width: 500px;
+                    height: 300px;
+                    background-color: $cardSlide;
+
+                    z-index: 10000;
+
+                    &>.logo {
+                        width: 150px;
+                        height: 100px;
+                    }
+                }
             }
         }
-    
+
+        &>.second-child {
+            width: 100%;
+
+            &>#slide2 {
+                width: 100%;
+                height: 600px;
+                display: flex;
+
+                &>#slide2-left {
+                    width: 400px;
+
+                    &>img {
+                        width: 400px
+                    }
+
+                    ;
+                }
+
+                &>#slide2-middle {
+                    width: 400px;
+
+                    &>img {
+                        width: 400px;
+                        height: 100%;
+                        border-bottom: 4px solid $cvert;
+
+                    }
 
 
+                }
+
+                &>#slide2-right {
+                    width: 400px;
+
+                    &>img {
+                        width: 400px;
+                    }
+
+
+                }
+            }
+
+        }
+
+        &>.last-child {
+            width: 100%;
+
+            &>#slide3 {
+                width: 100%;
+            }
+        }
+    }
 
     &>#presentation {
         width: 100%;
         display: flex;
         background-image: url('../img/brown-point-fond.png');
+        margin-top: 50px;
 
         &>#bio {
             width: 50%;
