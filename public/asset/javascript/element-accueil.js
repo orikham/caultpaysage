@@ -48,5 +48,17 @@ window.addEventListener("scroll", function(){
   if (scrollPosition > 300) {
     document.getElementById("bio").classList.toggle("gauche");
   }
-})
+});
+
+
+const svg = document.getElementById("svg");
+const menusM = document.getElementById("menus-m");
+
+svg.addEventListener("click",() =>{
+  if (menusM.style.display === "block") {
+    menusM.style.display = "none";
+  } else {
+    menusM.style.display = "block";
+  }
+});
   

@@ -41,7 +41,7 @@ button {
     background-color: white;
   }
   .header-desktop > #logo-lien-accueil > .logo {
-    width: 300px;
+    width: 150px;
     height: 100px;
   }
   .header-desktop > #menus-d > ul {
@@ -64,6 +64,9 @@ button {
     border-bottom: 1px solid #89601e;
   }
   .header-desktop > #menus-burger {
+    display: none;
+  }
+  #menus-m {
     display: none;
   }
   /*footer*/
@@ -201,7 +204,6 @@ button {
     width: 600px;
     height: 300px;
     background-color: #89601e;
-    opacity: 0.5;
   }
   #accueil > .carousel-content > .last-child > #slide3 > img {
     width: 150px;
@@ -258,4 +260,157 @@ button {
     border: 1px solid #367433;
   }
 }
-/****************CSS*MOBILE*********//*# sourceMappingURL=caultpaysages.css.map */
+/****************CSS*MOBILE*********/
+@media screen and (min-width: 390px) and (max-width: 1024px) {
+  /*header*/
+  .header-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-mobile > #logo-lien-accueil > .logo {
+    width: 150px;
+  }
+  .header-mobile > #menus-d {
+    display: none;
+  }
+  .header-mobile > #menus-burger > #svg {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  #menus-m {
+    width: 100%;
+    display: none;
+    background-color: #367433;
+    position: fixed;
+  }
+  #menus-m > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #menus-m > ul > li {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    background-color: #d9d9d9;
+    border: 1px solid #367433;
+  }
+  #menus-m > ul > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #367433;
+  }
+  /*footer*/
+  footer {
+    width: 100%;
+  }
+  footer > #rose {
+    display: none;
+  }
+  footer > #footer-droit > #carte-de-visite {
+    display: none;
+  }
+  footer > #footer-droit > #mentions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer > #footer-droit > #mentions > h6 {
+    color: #89601e;
+  }
+  footer > #footer-droit > #mentions > a {
+    color: #89601e;
+    font-size: 0.5rem;
+  }
+  footer > #footer-droit > #mentions > p {
+    color: #89601e;
+    font-size: 0.5rem;
+  }
+  footer > #footer-droit > #mentions > img {
+    width: 20px;
+    height: 20px;
+  }
+  /*section-accueil*/
+  #accueil > .carousel-content {
+    display: none;
+  }
+  #accueil > .carousel-content > .first-child {
+    width: 100%;
+  }
+  #accueil > .carousel-content > .first-child > #slide1 {
+    width: 100%;
+  }
+  #accueil > .carousel-content > .first-child > #slide1 > source {
+    width: 1200px;
+  }
+  #accueil > .carousel-content > .first-child > #slide1 > aside {
+    width: 500px;
+    height: 300px;
+    background-color: #d9d9d9;
+    z-index: 10000;
+  }
+  #accueil > .carousel-content > .first-child > #slide1 > aside > .logo {
+    width: 150px;
+    height: 100px;
+  }
+  #accueil > .carousel-content > .second-child {
+    width: 100%;
+  }
+  #accueil > .carousel-content > .second-child > #slide2 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+  }
+  #accueil > .carousel-content > .second-child > #slide2 > #slide2-left {
+    width: 400px;
+  }
+  #accueil > .carousel-content > .second-child > #slide2 > #slide2-left > img {
+    width: 400px;
+  }
+  #accueil > .carousel-content > .second-child > #slide2 > #slide2-middle {
+    width: 400px;
+  }
+  #accueil > .carousel-content > .second-child > #slide2 > #slide2-middle > img {
+    width: 400px;
+    height: 100%;
+    border-bottom: 4px solid #367433;
+  }
+  #accueil > .carousel-content > .second-child > #slide2 > #slide2-right {
+    width: 400px;
+  }
+  #accueil > .carousel-content > .second-child > #slide2 > #slide2-right > img {
+    width: 400px;
+  }
+  #accueil > .carousel-content > .last-child {
+    width: 100%;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 {
+    width: 100%;
+  }
+  #accueil > #presentation {
+    width: 100%;
+    display: flex;
+    background-image: url("../img/brown-point-fond.png");
+    margin-top: 50px;
+  }
+  #accueil > #presentation > #bio {
+    width: 50%;
+    border: 1px solid #367433;
+  }
+  #accueil > #presentation > #bio > #prez {
+    color: #367433;
+  }
+  #accueil > #presentation > #illustrations {
+    width: 50%;
+    border: 1px solid #367433;
+  }
+}/*# sourceMappingURL=caultpaysages.css.map */

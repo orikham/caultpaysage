@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}{% endblock %}</title>
-        
-        <link rel="stylesheet" href="{{ asset('asset/css/caultpaysages.css') }}">
-        {% block stylesheets %}
-           
-        {% endblock %}
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}{% endblock %}
+		</title>
 
-        {% block javascripts %}
-           
-        {% endblock %}
-        <script src="{{ asset('asset/javascript/element-accueil.js') }}"></script>
-        
-    </head>
-    <body>
-        {% include "main/header.html.twig" %}
-				{% block body %}{% endblock %}
-                {% include "main/footer.html.twig" %}
-    </body>
+		<link rel="stylesheet" href="{{ asset('asset/css/caultpaysages.css') }}"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
+		<script src="{{ asset('asset/javascript/element-accueil.js') }}"></script>
+
+	</head>
+	<body>
+		{% include "main/header.html.twig" %}
+		{% block body %}{% endblock %}
+		{% include "main/footer.html.twig" %}
+	</body>
 </html>
