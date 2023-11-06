@@ -16,7 +16,16 @@ $cardSlide : #d9d9d9;
     margin: 50px auto;
 }
 
-a,ul,li,label {
+// .row-limit-size-mobile {
+//     max-width: 390px;
+//     width: 100%;
+
+// }
+
+a,
+ul,
+li,
+label {
     text-decoration: none;
     list-style: none;
 
@@ -31,258 +40,501 @@ button {
 }
 
 /****************CSS*DESKTOP*********/
-/*header*/
-header {
-    width: 100%;
-    height: 200px;
-    background-image: url('../img/branche-fond.png');
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+@media screen and (min-width: 1024px) {
 
-    &>#logo-lien-accueil {
-        background-color: white;
+    /*header*/
 
-        &>.logo {
-            width: 300px;
-            height: 200px;
-        }
-    }
-
-    &>#menus {
-
-        &>ul {
-
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-
-            &>li {
-
-                margin: 0 15px;
-
-                &>a {
-                    width: 100%;
-                    height: 200px;
-                    background-color: white;
-                    text-transform: uppercase;
-                    color: $cvert ;
-                    font-size: 1.2em;
-                }
-
-                &>a:hover {
-                    border-bottom: 1px solid $cmarron;
-                }
-            }
-        }
-    }
-}
-
-/*footer*/
-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: $fond;
-
-
-
-    &>#footer-droit {
-        width: 75%;
+    .header-desktop {
+        width: 100%;
+        height: 100px;
+        background-image: url('../img/branche-fond.png');
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
-        &>#carte-de-visite {
+        &>#logo-lien-accueil {
+            background-color: white;
 
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            &>#partie1 {
-                &>h4 {
-                    color: $cvert;
-                }
-
-                &>p {
-                    width: 200px;
-                    color: $cmarron;
-                }
-            }
-
-            &>#partie2 {
-                &>h4 {
-                    color: $cvert;
-                }
-
-                &>p {
-                    width: 200px;
-                    color: $cmarron;
-                }
-
-                &>a {
-
-                    &>button {
-                        width: 100px;
-                        height: 25px;
-                        background-color: $cvert;
-                        color: white;
-                    }
-                }
-
-
-            }
-
-            &>#partie3 {
-                &>h4 {
-                    color: $cvert;
-
-                }
-
-                &>p {
-                    width: 200px;
-                    color: $cmarron;
-                }
+            &>.logo {
+                width: 300px;
+                height: 100px;
             }
         }
 
-        &>#mentions {
-            width: 800px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+        &>#menus-d {
 
-            &>h6 {
-                color: $cmarron;
-            }
+            &>ul {
 
-            &>a {
-                color: $cmarron;
-            }
-
-            &>p {
-                color: $cmarron;
-            }
-
-            &>img {
-                width: 20px;
-                height: 20px;
-            }
-        }
-    }
-}
-
-/*section-accueil*/
-#accueil {
-
-    &>.carousel-content {
-
-        display: flex;
-
-        &>.first-child {
-            width: 100%;
-            // background: url('../img/accueil/sliders-accueil/slide-1/gazon.mp4') no-repeat;
-            // background-size: cover;
-
-            &>#slide1 {
-                width: 100%;
-
-                &>source {
-                    width: 1200px;
-                }
-
-
-                &>aside {
-                    width: 500px;
-                    height: 300px;
-                    background-color: $cardSlide;
-
-                    z-index: 10000;
-
-                    &>.logo {
-                        width: 150px;
-                        height: 100px;
-                    }
-                }
-            }
-        }
-
-        &>.second-child {
-            width: 100%;
-
-            &>#slide2 {
-                width: 100%;
-                height: 600px;
                 display: flex;
+                flex-direction: row;
+                justify-content: space-between;
 
-                &>#slide2-left {
-                    width: 400px;
 
-                    &>img {
-                        width: 400px
+                &>li {
+
+                    margin: 0 15px;
+
+                    &>a {
+                        width: 100%;
+                        height: 200px;
+                        background-color: white;
+                        text-transform: uppercase;
+                        color: $cvert ;
+                        font-size: 1.2em;
                     }
 
-                    ;
-                }
-
-                &>#slide2-middle {
-                    width: 400px;
-
-                    &>img {
-                        width: 400px;
-                        height: 100%;
-                        border-bottom: 4px solid $cvert;
-
+                    &>a:hover {
+                        border-bottom: 1px solid $cmarron;
                     }
-
-
-                }
-
-                &>#slide2-right {
-                    width: 400px;
-
-                    &>img {
-                        width: 400px;
-                    }
-
-
                 }
             }
-
         }
 
-        &>.last-child {
-            width: 100%;
-
-            &>#slide3 {
-                width: 100%;
-            }
+        &>#menus-burger {
+            display: none;
         }
     }
 
-    &>#presentation {
+    /*footer*/
+    footer {
         width: 100%;
         display: flex;
-        background-image: url('../img/brown-point-fond.png');
-        margin-top: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $fond;
 
-        &>#bio {
-            width: 50%;
-            border: 1px solid $cvert;
 
-            &>#prez {
-                color: $cvert;
+
+        &>#footer-droit {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+
+            &>#carte-de-visite {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                &>#partie1 {
+                    &>h4 {
+                        color: $cvert;
+                        margin-bottom: 10px;
+                    }
+
+                    &>p {
+                        width: 200px;
+                        color: $cmarron;
+                    }
+                }
+
+                &>#partie2 {
+                    &>h4 {
+                        color: $cvert;
+                        margin-bottom: 10px;
+                    }
+
+                    &>p {
+                        width: 200px;
+                        color: $cmarron;
+                    }
+
+                    &>a {
+
+                        &>button {
+                            width: 100px;
+                            height: 25px;
+                            background-color: $cvert;
+                            color: white;
+                            margin-top: 10px;
+                        }
+                    }
+
+
+                }
+
+                &>#partie3 {
+                    &>h4 {
+                        color: $cvert;
+                        margin-bottom: 10px;
+
+                    }
+
+                    &>p {
+                        width: 200px;
+                        color: $cmarron;
+                    }
+                }
+            }
+
+            &>#mentions {
+                width: 800px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                &>h6 {
+                    color: $cmarron;
+                }
+
+                &>a {
+                    color: $cmarron;
+                }
+
+                &>p {
+                    color: $cmarron;
+                }
+
+                &>img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    /*section-accueil*/
+    #accueil {
+
+        &>.carousel-content {
+            width: 100%;
+            display: flex;
+
+            &>.first-child {
+                width: 1200px;
+
+                // background-image: url('../img/accueil/sliders-accueil/slide-1/gazon.mp4') no-repeat;
+                // background-size: cover;
+
+                &>#slide1 {
+                    width: 1200px;
+                    height: 600px;
+                    transition: transform 2s linear;
+                    animation: scroll 200s infinite;
+
+
+
+
+                    &>aside {
+                        display: none;
+                        width: 500px;
+                        height: 300px;
+                        background-color: $cardSlide;
+
+                        z-index: 10000;
+
+                        &>.logo {
+                            width: 150px;
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+
+            &>.second-child {
+                width: 1200px;
+
+
+
+                &>#slide2 {
+
+
+                    display: flex;
+
+
+                    &>#slide2-left {
+                        width: 400px;
+                        display: flex;
+                        flex-direction: column;
+
+
+
+
+
+                    }
+
+                    &>#slide2-middle {
+                        width: 400px;
+
+                        &>img {
+                            width: 400px;
+                            height: 100%;
+
+                        }
+
+
+                    }
+
+                    &>#slide2-right {
+                        width: 400px;
+                        display: flex;
+                        flex-direction: column;
+
+
+
+
+                    }
+                }
+
+            }
+
+            &>.last-child {
+                width: 1200px;
+                height: 600px;
+
+                &>#slide3 {
+                    width: 100%;
+                    display: flex;
+
+                    &>#bouton-contact {
+                        width: 900px;
+                        height: 600px;
+
+                        background-image: url('../img/accueil/sliders-accueil/slide-3/petit-fond-contact-slide.png');
+
+                        &>#plaquette-contact {
+                            width: 600px;
+                            height: 300px;
+                            background-color: $cmarron;
+                            opacity: 0.5;
+                        }
+                    }
+
+
+
+                    &>img {
+                        width: 150px;
+                        height: 600px;
+                    }
+
+                }
             }
         }
 
-        &>#illustrations {
-            width: 50%;
-            border: 1px solid $cvert;
+        &>#bouton-slider-accueil {
+            display: flex;
+            justify-content: center;
 
+
+            &>#bouton-gauche {
+                width: 100px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $cvert;
+                border-radius: 100px;
+                color: white;
+
+            }
+
+            &>#bouton-droit {
+                width: 100px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $cvert;
+                border-radius: 100px;
+                color: white;
+
+            }
 
         }
+
+        &>#presentation {
+            width: 100%;
+            display: flex;
+            background-image: url('../img/brown-point-fond.png');
+            margin-top: 50px;
+
+
+
+            &>#bio {
+                width: 50%;
+                border: 1px solid $cvert;
+
+
+                transition: slide 1s ease both;
+
+                @keyframes slide {
+                    0% {
+                        transform: translateX(-100%);
+                    }
+
+                    100% {
+                        transform: translateX(0);
+                    }
+
+                }
+
+                &>#prez {
+                    color: $cvert;
+                }
+            }
+
+
+
+            &>#illustrations {
+                width: 50%;
+                border: 1px solid $cvert;
+
+
+            }
+        }
+
+
     }
+
 }
+
+/****************CSS*MOBILE*********/
+// @media screen and (min-width: 390px) {
+
+//     .header-mobile {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-around;
+
+
+
+//         &>#logo-lien-accueil {
+//             width: 20%;
+
+
+
+//             &>.logo {
+
+
+//             }
+//         }
+
+//         &>.menus-m{
+//             display: none;
+//            }
+
+//            &>#menus-burger{
+//             width: 60px;
+//             height: 60px;
+//             color: $cvert;
+//            }
+
+
+//     }
+
+//     /*section-accueil*/
+//     #accueil {
+
+//         &>.carousel-content {
+
+//             display: none;
+
+//             &>.first-child {
+//                 width: 100%;
+//                 // background: url('../img/accueil/sliders-accueil/slide-1/gazon.mp4') no-repeat;
+//                 // background-size: cover;
+
+//                 &>#slide1 {
+//                     width: 100%;
+
+//                     &>source {
+//                         width: 1200px;
+//                     }
+
+
+//                     &>aside {
+//                         width: 500px;
+//                         height: 300px;
+//                         background-color: $cardSlide;
+
+//                         z-index: 10000;
+
+//                         &>.logo {
+//                             width: 150px;
+//                             height: 100px;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             &>.second-child {
+//                 width: 100%;
+
+//                 &>#slide2 {
+//                     width: 100%;
+//                     height: 600px;
+//                     display: flex;
+
+//                     &>#slide2-left {
+//                         width: 400px;
+
+//                         &>img {
+//                             width: 400px
+//                         }
+
+//                         ;
+//                     }
+
+//                     &>#slide2-middle {
+//                         width: 400px;
+
+//                         &>img {
+//                             width: 400px;
+//                             height: 100%;
+//                             border-bottom: 4px solid $cvert;
+
+//                         }
+
+
+//                     }
+
+//                     &>#slide2-right {
+//                         width: 400px;
+
+//                         &>img {
+//                             width: 400px;
+//                         }
+
+
+//                     }
+//                 }
+
+//             }
+
+//             &>.last-child {
+//                 width: 100%;
+
+//                 &>#slide3 {
+//                     width: 100%;
+//                 }
+//             }
+//         }
+
+//         &>#presentation {
+//             width: 100%;
+//             display: flex;
+//             background-image: url('../img/brown-point-fond.png');
+//             margin-top: 50px;
+
+//             &>#bio {
+//                 width: 50%;
+//                 border: 1px solid $cvert;
+
+//                 &>#prez {
+//                     color: $cvert;
+//                 }
+//             }
+
+//             &>#illustrations {
+//                 width: 50%;
+//                 border: 1px solid $cvert;
+
+
+//             }
+//         }
+//     }
+
+// }
