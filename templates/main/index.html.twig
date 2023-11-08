@@ -14,17 +14,20 @@
 
 					<video id="slide1" autoplay loop muted>
 						<source src="{{ asset('asset/img/accueil/sliders-accueil/slide-1/gazon.mp4') }}" alt="" type="video/mp4">
-						<aside>
-							<img class="logo" src="{{ asset('asset/img/icone/logo.jpg') }}" alt="logo du site">
-							<h3>Tonte, taille, jardinage, terrasse en bois</h3>
-							<h4>Pizay et ses environs</h4>
-							<p>Besoin d’un jardinier ? Vous souhaitez aménagés une terrasse ? Besoin d’un rafraichissement ?
-								<strong>CaultPaysages</strong>
-								votre solution</p>
-						</aside>
-
-
 					</video>
+
+					<aside>
+						<img class="logo" src="{{ asset('asset/img/icone/logo.jpg') }}" alt="logo du site">
+						<h3>Tonte, taille, jardinage, terrasse en bois</h3>
+						<h3>Pizay et ses environs</h3>
+						<p>Besoin d’un jardinier ? Vous souhaitez aménagés une terrasse ? Besoin d’un rafraichissement ?
+							<strong>
+								<span id="c">Cault</span>
+								<span id="p">Paysages</span>
+							</strong>
+							votre solution</p>
+					</aside>
+
 				</div>
 
 				<div class="carouselItem second-child">
@@ -47,29 +50,54 @@
 				<div class="carouselItem last-child">
 					<div id="slide3">
 						<img src="{{ asset('asset/img/accueil/sliders-accueil/slide-3/fond-contact-gauche.png') }}" alt="">
-						<div id="bouton-contact">
+						<div id="contnair-contact">
 							<div id="plaquette-contact">
-								<p>Prise de RDV, demande d'informations</p>
+								<p id="p1">Prise de RDV, demande d'informations</p>
 								<div id="grande-div">
 									<div id="lien-contact">
 										<div id="phone">
-										<img src="{{ asset('asset/img/icone/square-phone-solid.svg') }}">
-										
-											
+											<svg id="svg-phone" xmlns="http://www.w3.org/2000/svg" height="1em" viewbox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>
+													#svg-phone {
+														fill: #ffffff
+													}
+												</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm90.7 96.7c9.7-2.6 19.9 2.3 23.7 11.6l20 48c3.4 8.2 1 17.6-5.8 23.2L168 231.7c16.6 35.2 45.1 63.7 80.3 80.3l20.2-24.7c5.6-6.8 15-9.2 23.2-5.8l48 20c9.3 3.9 14.2 14 11.6 23.7l-12 44C336.9 378 329 384 320 384C196.3 384 96 283.7 96 160c0-9 6-16.9 14.7-19.3l44-12z"/></svg>
 
+											<div class="petite-div-contact">
+												<h5>Me contacter</h5>
+												<a href="tel:+0621421440">06/21/42/14/40</a>
 
-
-
-
+											</div>
 
 
 										</div>
 										<div id="mail">
-										<img src="{{ asset('asset/img/icone/at-solid.svg') }}"></div>
+											<svg id="svg-mail" xmlns="http://www.w3.org/2000/svg" height="1em" viewbox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>
+													#svg-mail {
+														fill: #ffffff
+													}
+												</style><path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/></svg>
+
+											<div class="petite-div-contact">
+												<h5>M'écrire</h5>
+												<a href="mailto:adresse@email.com">cault.paysages@gmail.com</a>
+
+											</div>
+										</div>
+
 									</div>
-									<figure id="logo-bis"></figure>
+									<div id="logo-bis">
+										<img src="{{ asset('asset/img/icone/logo.jpg') }}" alt="">
+										<div id="adresse-responsive">
+											<h4>Cault<span>Paysages</span></h4>
+											<p>Paysagiste</p>
+											<p>361 Rue du Mas Peguet</p>
+											<p>01120 Pizay</p>
+
+										</div>
+									</div>
 								</div>
-								<p></p>
+								<p id="p2">N’hésitez pas à me faire vos demandes via notre formulaire, je vous répondrais dans les plus bref delais
+								</p>
 							</div>
 						</div>
 						<img src="{{ asset('asset/img/accueil/sliders-accueil/slide-3/fond-contact-droite.png') }}" alt="">
@@ -79,6 +107,7 @@
 
 
 			</div>
+
 			<div id="bouton-slider-accueil">
 				<div id="bouton-gauche">Précédent</div>
 				<div id="bouton-droit">Suivant</div>

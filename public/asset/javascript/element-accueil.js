@@ -1,3 +1,18 @@
+//menus burger
+document.addEventListener("DOMContentLoaded", function(){
+  const svg = document.getElementById("svg-header");
+const menusM = document.getElementById("menus-m");
+
+svg.addEventListener("click",() =>{
+  if (menusM.style.display === "block") {
+    menusM.style.display = "none";
+  } else {
+    menusM.style.display = "block";
+  }
+});
+})
+
+
 //slider de l'accueil
 document.addEventListener("DOMContentLoaded", function() {
     
@@ -6,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const boutonDroit = document.getElementById("bouton-droit");
   
     let currentIndex = 0;
-  
+    const isMobile = window.innerWidth <= 768;
     // Fonction pour afficher la carte actuelle
     function showCard(index) {
       // Masquez toutes les cartes
@@ -20,24 +35,36 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // bouton suivant
     boutonDroit.addEventListener("click", function() {
-      currentIndex++;
-      if (currentIndex >= carouselItems.length) {
-        currentIndex = 0;
+      if (isMobile) {
+        // En mode mobile, passe directement de slide 1 à slide 3
+        currentIndex = currentIndex === 0 ? 2 : 0;
+      } else {
+        currentIndex++;
+        if (currentIndex >= carouselItems.length) {
+          currentIndex = 0;
+        }
       }
       showCard(currentIndex);
     });
   
     // bouton précédent
     boutonGauche.addEventListener("click", function() {
-      currentIndex--;
-      if (currentIndex < 0) {
-        currentIndex = carouselItems.length - 1;
+      if (isMobile) {
+        // En mode mobile, passe directement de slide 1 à slide 3
+        currentIndex = currentIndex === 0 ? 2 : 0;
+      } else {
+        currentIndex--;
+        if (currentIndex < 0) {
+          currentIndex = carouselItems.length - 1;
+        }
       }
       showCard(currentIndex);
     });
   
     // Affichez la première carte au chargement de la page
     showCard(currentIndex);
+
+    
   });
 
 //animation de la présentation dans l'accueil
@@ -51,14 +78,4 @@ window.addEventListener("scroll", function(){
 });
 
 
-const svg = document.getElementById("svg");
-const menusM = document.getElementById("menus-m");
-
-svg.addEventListener("click",() =>{
-  if (menusM.style.display === "block") {
-    menusM.style.display = "none";
-  } else {
-    menusM.style.display = "block";
-  }
-});
   

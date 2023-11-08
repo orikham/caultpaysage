@@ -26,7 +26,7 @@ button {
 }
 
 /****************CSS*DESKTOP*********/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   /*header*/
   .header-desktop {
     width: 100%;
@@ -143,67 +143,206 @@ button {
   #accueil > .carousel-content {
     width: 100%;
     display: flex;
+    justify-content: center;
   }
   #accueil > .carousel-content > .first-child {
-    width: 1200px;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    background-color: #89601e;
   }
   #accueil > .carousel-content > .first-child > #slide1 {
-    width: 1200px;
+    width: 1000px;
     height: 600px;
     transition: transform 2s linear;
     animation: scroll 200s infinite;
   }
-  #accueil > .carousel-content > .first-child > #slide1 > aside {
-    display: none;
+  #accueil > .carousel-content > .first-child > aside {
     width: 500px;
-    height: 300px;
     background-color: #d9d9d9;
-    z-index: 10000;
+    opacity: 0.8;
+    position: absolute;
+    top: 15%;
+    left: 40%;
   }
-  #accueil > .carousel-content > .first-child > #slide1 > aside > .logo {
+  #accueil > .carousel-content > .first-child > aside > .logo {
     width: 150px;
     height: 100px;
+    padding: 15px;
+  }
+  #accueil > .carousel-content > .first-child > aside > h3 {
+    color: #89601e;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  #accueil > .carousel-content > .first-child > aside > p {
+    color: white;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  #accueil > .carousel-content > .first-child > aside > p > strong > #c {
+    color: #367433;
+  }
+  #accueil > .carousel-content > .first-child > aside > p > strong > #p {
+    color: #89601e;
   }
   #accueil > .carousel-content > .second-child {
-    width: 1200px;
+    width: 1000px;
+    height: 600px;
   }
   #accueil > .carousel-content > .second-child > #slide2 {
+    height: 600px;
     display: flex;
   }
   #accueil > .carousel-content > .second-child > #slide2 > #slide2-left {
-    width: 400px;
+    width: 350px;
+    height: 600px;
     display: flex;
     flex-direction: column;
+  }
+  #accueil > .carousel-content > .second-child > #slide2 > #slide2-left > img {
+    height: 300px;
   }
   #accueil > .carousel-content > .second-child > #slide2 > #slide2-middle {
-    width: 400px;
+    width: 300px;
+    height: 600px;
   }
   #accueil > .carousel-content > .second-child > #slide2 > #slide2-middle > img {
-    width: 400px;
-    height: 100%;
+    width: 300px;
+    height: 600px;
   }
   #accueil > .carousel-content > .second-child > #slide2 > #slide2-right {
-    width: 400px;
+    width: 350px;
+    height: 600px;
     display: flex;
     flex-direction: column;
   }
+  #accueil > .carousel-content > .second-child > #slide2 > #slide2-right > img {
+    height: 300px;
+  }
   #accueil > .carousel-content > .last-child {
-    width: 1200px;
+    width: 1000px;
     height: 600px;
   }
   #accueil > .carousel-content > .last-child > #slide3 {
     width: 100%;
+    height: 600px;
     display: flex;
   }
-  #accueil > .carousel-content > .last-child > #slide3 > #bouton-contact {
-    width: 900px;
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact {
+    width: 800px;
     height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
     background-image: url("../img/accueil/sliders-accueil/slide-3/petit-fond-contact-slide.png");
   }
-  #accueil > .carousel-content > .last-child > #slide3 > #bouton-contact > #plaquette-contact {
-    width: 600px;
-    height: 300px;
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact {
     background-color: #89601e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10%;
+    margin-right: 10%;
+    opacity: 0.9;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #p1 {
+    color: white;
+    font-weight: bold;
+    border-bottom: 3px solid #367433;
+    margin: 10px 15px;
+    font-size: 1.2rem;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #p2 {
+    width: 350px;
+    color: white;
+    font-weight: bold;
+    margin: 10px 15px;
+    font-size: 1.2rem;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #phone {
+    width: 300px;
+    height: 70px;
+    border-radius: 200px;
+    background-color: #367433;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #phone > #svg-phone {
+    width: 60px;
+    height: 60px;
+    background-color: #367433;
+    border-radius: 100px;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #phone > .petite-div-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #phone > .petite-div-contact > h5 {
+    color: white;
+    font-weight: bolder;
+    margin: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #phone > .petite-div-contact > a {
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #mail {
+    width: 300px;
+    height: 70px;
+    border-radius: 200px;
+    background-color: #367433;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #mail > #svg-mail {
+    width: 60px;
+    height: 60px;
+    background-color: #367433;
+    border-radius: 100px;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #mail > .petite-div-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #mail > .petite-div-contact > h5 {
+    color: white;
+    font-weight: bolder;
+    margin: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #mail > .petite-div-contact > a {
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #logo-bis {
+    width: 150px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #logo-bis > img {
+    width: 150px;
+    height: 100px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #logo-bis > #adresse-responsive {
+    display: none;
   }
   #accueil > .carousel-content > .last-child > #slide3 > img {
     width: 150px;
@@ -222,6 +361,7 @@ button {
     background-color: #367433;
     border-radius: 100px;
     color: white;
+    margin: 25px 5px;
   }
   #accueil > #bouton-slider-accueil > #bouton-droit {
     width: 100px;
@@ -232,6 +372,7 @@ button {
     background-color: #367433;
     border-radius: 100px;
     color: white;
+    margin: 25px 5px;
   }
   #accueil > #presentation {
     width: 100%;
@@ -260,8 +401,8 @@ button {
     border: 1px solid #367433;
   }
 }
-/****************CSS*MOBILE*********/
-@media screen and (min-width: 390px) and (max-width: 1024px) {
+/****************CSS*MOBILE****************/
+@media screen and (min-width: 390px) and (max-width: 1200px) {
   /*header*/
   .header-mobile {
     width: 100%;
@@ -276,7 +417,7 @@ button {
   .header-mobile > #menus-d {
     display: none;
   }
-  .header-mobile > #menus-burger > #svg {
+  .header-mobile > #menus-burger > #svg-header {
     width: 60px;
     height: 60px;
     cursor: pointer;
@@ -286,6 +427,7 @@ button {
     display: none;
     background-color: #367433;
     position: fixed;
+    z-index: 10;
   }
   #menus-m > ul {
     display: flex;
@@ -341,60 +483,171 @@ button {
   }
   /*section-accueil*/
   #accueil > .carousel-content {
-    display: none;
+    width: 100%;
   }
   #accueil > .carousel-content > .first-child {
     width: 100%;
   }
   #accueil > .carousel-content > .first-child > #slide1 {
     width: 100%;
+    display: none;
   }
-  #accueil > .carousel-content > .first-child > #slide1 > source {
-    width: 1200px;
-  }
-  #accueil > .carousel-content > .first-child > #slide1 > aside {
-    width: 500px;
-    height: 300px;
+  #accueil > .carousel-content > .first-child > aside {
+    width: 100%;
     background-color: #d9d9d9;
-    z-index: 10000;
+    opacity: 0.8;
   }
-  #accueil > .carousel-content > .first-child > #slide1 > aside > .logo {
+  #accueil > .carousel-content > .first-child > aside > .logo {
     width: 150px;
     height: 100px;
   }
+  #accueil > .carousel-content > .first-child > aside > h3 {
+    color: #89601e;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  #accueil > .carousel-content > .first-child > aside > p {
+    color: white;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  #accueil > .carousel-content > .first-child > aside > p > strong > #c {
+    color: #367433;
+  }
+  #accueil > .carousel-content > .first-child > aside > p > strong > #p {
+    color: #89601e;
+  }
   #accueil > .carousel-content > .second-child {
-    width: 100%;
+    display: none;
   }
   #accueil > .carousel-content > .second-child > #slide2 {
-    width: 100%;
-    height: 600px;
-    display: flex;
-  }
-  #accueil > .carousel-content > .second-child > #slide2 > #slide2-left {
-    width: 400px;
-  }
-  #accueil > .carousel-content > .second-child > #slide2 > #slide2-left > img {
-    width: 400px;
-  }
-  #accueil > .carousel-content > .second-child > #slide2 > #slide2-middle {
-    width: 400px;
-  }
-  #accueil > .carousel-content > .second-child > #slide2 > #slide2-middle > img {
-    width: 400px;
-    height: 100%;
-    border-bottom: 4px solid #367433;
-  }
-  #accueil > .carousel-content > .second-child > #slide2 > #slide2-right {
-    width: 400px;
-  }
-  #accueil > .carousel-content > .second-child > #slide2 > #slide2-right > img {
-    width: 400px;
+    display: none;
   }
   #accueil > .carousel-content > .last-child {
     width: 100%;
   }
   #accueil > .carousel-content > .last-child > #slide3 {
     width: 100%;
+    display: flex;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact {
+    width: 100%;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact {
+    background-color: #89601e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #p1 {
+    color: white;
+    font-weight: bold;
+    border-bottom: 3px solid #367433;
+    margin: 10px 15px;
+    font-size: 1.2rem;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #p2 {
+    width: 350px;
+    color: white;
+    font-weight: bold;
+    margin: 10px 15px;
+    font-size: 1.2rem;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #phone {
+    width: 300px;
+    height: 70px;
+    border-radius: 200px;
+    background-color: #367433;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #phone > #svg-phone {
+    width: 60px;
+    height: 60px;
+    background-color: #367433;
+    border-radius: 100px;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #phone > .petite-div-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #phone > .petite-div-contact > h5 {
+    color: white;
+    font-weight: bolder;
+    margin: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #phone > .petite-div-contact > a {
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #mail {
+    width: 300px;
+    height: 70px;
+    border-radius: 200px;
+    background-color: #367433;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #mail > #svg-mail {
+    width: 60px;
+    height: 60px;
+    background-color: #367433;
+    border-radius: 100px;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #mail > .petite-div-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #mail > .petite-div-contact > h5 {
+    color: white;
+    font-weight: bolder;
+    margin: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #lien-contact > #mail > .petite-div-contact > a {
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #logo-bis {
+    width: 150px;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #logo-bis > img {
+    width: 150px;
+    height: 100px;
+    background-color: #f1f0f0;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #logo-bis > #adresse-responsive {
+    width: 150px;
+    text-align: center;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #logo-bis > #adresse-responsive > h4 > span {
+    color: #367433;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > #contnair-contact > #plaquette-contact > #grande-div > #logo-bis > #adresse-responsive > p {
+    color: white;
+    font-weight: bold;
+  }
+  #accueil > .carousel-content > .last-child > #slide3 > img {
+    display: none;
   }
   #accueil > #presentation {
     width: 100%;

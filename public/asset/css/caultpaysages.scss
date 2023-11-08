@@ -40,7 +40,7 @@ button {
 }
 
 /****************CSS*DESKTOP*********/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
 
     /*header*/
 
@@ -206,66 +206,99 @@ button {
         &>.carousel-content {
             width: 100%;
             display: flex;
+            justify-content: center;
 
             &>.first-child {
-                width: 1200px;
-
-                // background-image: url('../img/accueil/sliders-accueil/slide-1/gazon.mp4') no-repeat;
-                // background-size: cover;
+                width: 1000px;
+                height: 600px;
+                position: relative;
+                background-color: $cmarron;
 
                 &>#slide1 {
-                    width: 1200px;
+                    width: 1000px;
                     height: 600px;
                     transition: transform 2s linear;
                     animation: scroll 200s infinite;
+                }
+
+                &>aside {
+
+                    width: 500px;
+                    background-color: $cardSlide;
+                    opacity: 0.8;
+                    position: absolute;
+                    top: 15%;
+                    left: 40%;
 
 
+                    &>.logo {
+                        width: 150px;
+                        height: 100px;
+                        padding: 15px;
+                    }
 
+                    &>h3 {
+                        color: $cmarron;
+                        padding: 15px;
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                    }
 
-                    &>aside {
-                        display: none;
-                        width: 500px;
-                        height: 300px;
-                        background-color: $cardSlide;
+                    &>p {
+                        color: white;
+                        padding: 15px;
+                        font-weight: bolder;
+                        font-size: 1.2rem;
 
-                        z-index: 10000;
+                        &>strong {
 
-                        &>.logo {
-                            width: 150px;
-                            height: 100px;
+                            &>#c {
+                                color: $cvert;
+                            }
+
+                            &>#p {
+                                color: $cmarron;
+                            }
                         }
                     }
                 }
             }
 
             &>.second-child {
-                width: 1200px;
+                width: 1000px;
+                height: 600px;
 
 
 
                 &>#slide2 {
-
+                    height: 600px;
 
                     display: flex;
 
 
                     &>#slide2-left {
-                        width: 400px;
+                        width: 350px;
+                        height: 600px;
                         display: flex;
                         flex-direction: column;
 
+                        &>img {
 
+                            height: 300px;
+
+                        }
 
 
 
                     }
 
                     &>#slide2-middle {
-                        width: 400px;
+                        width: 300px;
+                        height: 600px;
 
                         &>img {
-                            width: 400px;
-                            height: 100%;
+                            width: 300px;
+                            height: 600px;
 
                         }
 
@@ -273,12 +306,18 @@ button {
                     }
 
                     &>#slide2-right {
-                        width: 400px;
+                        width: 350px;
+                        height: 600px;
                         display: flex;
                         flex-direction: column;
 
 
+                        &>img {
 
+                            height: 300px;
+
+
+                        }
 
                     }
                 }
@@ -286,24 +325,169 @@ button {
             }
 
             &>.last-child {
-                width: 1200px;
+                width: 1000px;
                 height: 600px;
 
                 &>#slide3 {
                     width: 100%;
+                    height: 600px;
                     display: flex;
 
-                    &>#bouton-contact {
-                        width: 900px;
+                    &>#contnair-contact {
+                        width: 800px;
                         height: 600px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        justify-content: flex-end;
 
                         background-image: url('../img/accueil/sliders-accueil/slide-3/petit-fond-contact-slide.png');
 
                         &>#plaquette-contact {
-                            width: 600px;
-                            height: 300px;
                             background-color: $cmarron;
-                            //opacity: 0.5;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            margin-top: 10%;
+                            margin-right: 10%;
+
+                            &>#p1 {
+                                color: white;
+                                font-weight: bold;
+                                border-bottom: 3px solid $cvert;
+                                margin: 10px 15px;
+                                font-size: 1.2rem;
+                            }
+
+                            &>#p2 {
+                                width: 350px;
+                                color: white;
+                                font-weight: bold;
+                                margin: 10px 15px;
+                                font-size: 1.2rem;
+                            }
+
+                            opacity: 0.9;
+
+                            &>#grande-div {
+
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: space-around;
+
+                                &>#lien-contact {
+                                    &>#phone {
+                                        width: 300px;
+                                        height: 70px;
+                                        border-radius: 200px;
+                                        background-color: $cvert;
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        margin: 15px;
+
+                                        &>#svg-phone {
+                                            width: 60px;
+                                            height: 60px;
+                                            background-color: $cvert;
+                                            border-radius: 100px;
+                                            padding: 5px;
+
+
+
+                                        }
+
+                                        &>.petite-div-contact {
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding: 5px;
+
+
+
+                                            &>h5 {
+
+                                                color: white;
+                                                font-weight: bolder;
+                                                margin: 5px;
+
+
+                                            }
+
+                                            &>a {
+                                                color: white;
+                                                font-weight: bolder;
+                                                padding: 5px;
+                                            }
+
+
+                                        }
+                                    }
+
+                                    &>#mail {
+                                        width: 300px;
+                                        height: 70px;
+                                        border-radius: 200px;
+                                        background-color: $cvert;
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        margin: 15px;
+
+                                        &>#svg-mail {
+                                            width: 60px;
+                                            height: 60px;
+                                            background-color: $cvert;
+                                            border-radius: 100px;
+                                            padding: 5px;
+                                        }
+
+                                        &>.petite-div-contact {
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding: 5px;
+
+
+
+                                            &>h5 {
+
+                                                color: white;
+                                                font-weight: bolder;
+                                                margin: 5px;
+
+
+                                            }
+
+                                            &>a {
+                                                color: white;
+                                                font-weight: bolder;
+                                                padding: 5px;
+                                            }
+
+
+                                        }
+                                    }
+
+
+
+
+                                }
+&>#logo-bis{
+    width: 150px;
+
+    &>img {
+        width: 150px;
+        height: 100px;
+    }
+
+    &>#adresse-responsive{
+        display: none;
+    }
+
+}
+                                
+                            }
                         }
                     }
 
@@ -323,6 +507,7 @@ button {
             justify-content: center;
 
 
+
             &>#bouton-gauche {
                 width: 100px;
                 height: 50px;
@@ -332,6 +517,7 @@ button {
                 background-color: $cvert;
                 border-radius: 100px;
                 color: white;
+                margin: 25px 5px;
 
             }
 
@@ -344,6 +530,7 @@ button {
                 background-color: $cvert;
                 border-radius: 100px;
                 color: white;
+                margin: 25px 5px;
 
             }
 
@@ -395,8 +582,8 @@ button {
 
 }
 
-/****************CSS*MOBILE*********/
-@media screen and (min-width: 390px) and (max-width: 1024px) {
+/****************CSS*MOBILE****************/
+@media screen and (min-width: 390px) and (max-width: 1200px) {
 
     /*header*/
     .header-mobile {
@@ -424,10 +611,11 @@ button {
         }
 
         &>#menus-burger {
-            &>#svg {
+            &>#svg-header {
                 width: 60px;
                 height: 60px;
                 cursor: pointer;
+
             }
         }
 
@@ -439,8 +627,9 @@ button {
         display: none;
         background-color: $cvert;
         position: fixed;
+        z-index: 10;
 
-        
+
 
         &>ul {
 
@@ -522,77 +711,66 @@ button {
     #accueil {
 
         &>.carousel-content {
+            width: 100%;
 
-            display: none;
 
             &>.first-child {
                 width: 100%;
-                // background: url('../img/accueil/sliders-accueil/slide-1/gazon.mp4') no-repeat;
-                // background-size: cover;
+
+
 
                 &>#slide1 {
                     width: 100%;
+                    display: none;
 
-                    &>source {
-                        width: 1200px;
+
+                }
+
+                &>aside {
+                    width: 100%;
+                    background-color: $cardSlide;
+                    opacity: 0.8;
+
+                    &>.logo {
+                        width: 150px;
+                        height: 100px;
                     }
 
+                    &>h3 {
+                        color: $cmarron;
+                        padding: 15px;
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                    }
 
-                    &>aside {
-                        width: 500px;
-                        height: 300px;
-                        background-color: $cardSlide;
+                    &>p {
+                        color: white;
+                        padding: 15px;
+                        font-weight: bolder;
+                        font-size: 1.2rem;
 
-                        z-index: 10000;
+                        &>strong {
 
-                        &>.logo {
-                            width: 150px;
-                            height: 100px;
+                            &>#c {
+                                color: $cvert;
+                            }
+
+                            &>#p {
+                                color: $cmarron;
+                            }
                         }
                     }
                 }
             }
 
             &>.second-child {
-                width: 100%;
-
+                display: none;
                 &>#slide2 {
-                    width: 100%;
-                    height: 600px;
-                    display: flex;
+                    
+                    display: none;
+                    
 
-                    &>#slide2-left {
-                        width: 400px;
-
-                        &>img {
-                            width: 400px
-                        }
-
-                        ;
-                    }
-
-                    &>#slide2-middle {
-                        width: 400px;
-
-                        &>img {
-                            width: 400px;
-                            height: 100%;
-                            border-bottom: 4px solid $cvert;
-
-                        }
-
-
-                    }
-
-                    &>#slide2-right {
-                        width: 400px;
-
-                        &>img {
-                            width: 400px;
-                        }
-
-
-                    }
+                   
                 }
 
             }
@@ -600,8 +778,183 @@ button {
             &>.last-child {
                 width: 100%;
 
+
                 &>#slide3 {
                     width: 100%;
+                    display: flex;
+
+                    &>#contnair-contact {
+                        width: 100%;
+                        
+
+                        &>#plaquette-contact {
+                            background-color: $cmarron;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: flex-start;
+                           
+
+                            &>#p1 {
+                                color: white;
+                                font-weight: bold;
+                                border-bottom: 3px solid $cvert;
+                                margin: 10px 15px;
+                                font-size: 1.2rem;
+                            }
+
+                            &>#p2 {
+                                width: 350px;
+                                color: white;
+                                font-weight: bold;
+                                margin: 10px 15px;
+                                font-size: 1.2rem;
+                            }
+
+                            //opacity: 0.5;
+
+                            &>#grande-div {
+
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: space-around;
+
+                                &>#lien-contact {
+                                    &>#phone {
+                                        width: 300px;
+                                        height: 70px;
+                                        border-radius: 200px;
+                                        background-color: $cvert;
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        margin: 15px;
+
+                                        &>#svg-phone {
+                                            width: 60px;
+                                            height: 60px;
+                                            background-color: $cvert;
+                                            border-radius: 100px;
+                                            padding: 5px;
+
+
+
+                                        }
+
+                                        &>.petite-div-contact {
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding: 5px;
+
+
+
+                                            &>h5 {
+
+                                                color: white;
+                                                font-weight: bolder;
+                                                margin: 5px;
+
+
+                                            }
+
+                                            &>a {
+                                                color: white;
+                                                font-weight: bolder;
+                                                padding: 5px;
+                                            }
+
+
+                                        }
+                                    }
+
+                                    &>#mail {
+                                        width: 300px;
+                                        height: 70px;
+                                        border-radius: 200px;
+                                        background-color: $cvert;
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        margin: 15px;
+
+                                        &>#svg-mail {
+                                            width: 60px;
+                                            height: 60px;
+                                            background-color: $cvert;
+                                            border-radius: 100px;
+                                            padding: 5px;
+                                        }
+
+                                        &>.petite-div-contact {
+                                            display: flex;
+                                            flex-direction: column;
+                                            padding: 5px;
+
+
+
+                                            &>h5 {
+
+                                                color: white;
+                                                font-weight: bolder;
+                                                margin: 5px;
+
+
+                                            }
+
+                                            &>a {
+                                                color: white;
+                                                font-weight: bolder;
+                                                padding: 5px;
+                                            }
+
+
+                                        }
+                                    }
+
+
+
+
+                                }
+
+                                &>#logo-bis{
+                                    width: 150px;
+                                
+                                    &>img {
+                                        width: 150px;
+                                        height: 100px; background-color: #f1f0f0;
+                                    }
+                                
+                                    &>#adresse-responsive{
+                                       width: 150px;
+                                       text-align: center;
+
+                                       &>h4{
+                                        &>span{
+                                            color: $cvert;
+                                        }
+                                       }
+
+                                       &>p{
+                                        color: white;
+                                        font-weight: bold;
+                                       }
+                                    }
+                                
+                                }
+                                   
+                     
+                            }
+                        }
+                    }
+
+
+
+                    &>img {
+                        display: none;
+                        
+                    }
                 }
             }
         }
