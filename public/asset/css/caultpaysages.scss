@@ -120,7 +120,7 @@ button {
 
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: space-around;
 
                 &>#partie1 {
                     &>h4 {
@@ -473,20 +473,21 @@ button {
 
 
                                 }
-&>#logo-bis{
-    width: 150px;
 
-    &>img {
-        width: 150px;
-        height: 100px;
-    }
+                                &>#logo-bis {
+                                    width: 150px;
 
-    &>#adresse-responsive{
-        display: none;
-    }
+                                    &>img {
+                                        width: 150px;
+                                        height: 100px;
+                                    }
 
-}
-                                
+                                    &>#adresse-responsive {
+                                        display: none;
+                                    }
+
+                                }
+
                             }
                         }
                     }
@@ -518,6 +519,7 @@ button {
                 border-radius: 100px;
                 color: white;
                 margin: 25px 5px;
+                cursor: pointer;
 
             }
 
@@ -531,6 +533,7 @@ button {
                 border-radius: 100px;
                 color: white;
                 margin: 25px 5px;
+                cursor: pointer;
 
             }
 
@@ -538,20 +541,25 @@ button {
 
         &>#presentation {
             width: 100%;
+            height: 600px;
             display: flex;
-            background-image: url('../img/brown-point-fond.png');
+
             margin-top: 50px;
 
 
 
             &>#bio {
                 width: 50%;
-                border: 1px solid $cvert;
+                height: 100%;
 
+                display: flex;
+                border-top: 1px solid $cvert;
+                border-bottom: 1px solid $cvert;
+                border-left: 1px solid $cvert;
+                animation: slide-left 5s ease both;
+                background-image: url('../img/brown-point-fond.png');
 
-                transition: slide 1s ease both;
-
-                @keyframes slide {
+                @keyframes slide-left {
                     0% {
                         transform: translateX(-100%);
                     }
@@ -559,20 +567,72 @@ button {
                     100% {
                         transform: translateX(0);
                     }
-
                 }
 
+
                 &>#prez {
+                    padding: 15px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+font-size: 1.2rem;
                     color: $cvert;
                 }
             }
 
 
 
+
             &>#illustrations {
                 width: 50%;
-                border: 1px solid $cvert;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-top: 1px solid $cvert;
+                border-bottom: 1px solid $cvert;
+                border-right: 1px solid $cvert;
+                animation: slide-right 5s ease both;
+                background-image: url('../img/brown-point-fond.png');
 
+                &>#illustration-presentation-haut {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-evenly;
+
+                    &>img {
+                        width: 250px;
+                        padding-top: 25px;
+                        z-index: 1000;
+                    }
+                }
+
+                &>#cubix {
+                    width: 100px;
+                    height: 100px;
+                    background-color: $cvert;
+                    display: flex;
+
+                }
+
+                &>#illustration-presentation-bas {
+                    display: flex;
+
+                    &>img {
+                        width: 250px;
+                        padding-bottom: 25px;
+                    }
+                }
+
+                @keyframes slide-right {
+                    0% {
+                        transform: translateX(100%);
+                    }
+
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
 
             }
         }
@@ -765,12 +825,13 @@ button {
 
             &>.second-child {
                 display: none;
-                &>#slide2 {
-                    
-                    display: none;
-                    
 
-                   
+                &>#slide2 {
+
+                    display: none;
+
+
+
                 }
 
             }
@@ -785,7 +846,7 @@ button {
 
                     &>#contnair-contact {
                         width: 100%;
-                        
+
 
                         &>#plaquette-contact {
                             background-color: $cmarron;
@@ -793,7 +854,7 @@ button {
                             flex-direction: column;
                             justify-content: space-around;
                             align-items: flex-start;
-                           
+
 
                             &>#p1 {
                                 color: white;
@@ -918,33 +979,36 @@ button {
 
                                 }
 
-                                &>#logo-bis{
+                                &>#logo-bis {
                                     width: 150px;
-                                
+
                                     &>img {
                                         width: 150px;
-                                        height: 100px; background-color: #f1f0f0;
+                                        height: 100px;
+                                        background-color: #f1f0f0;
+                                        opacity: 0.9;
+                                        border-radius: 5px;
                                     }
-                                
-                                    &>#adresse-responsive{
-                                       width: 150px;
-                                       text-align: center;
 
-                                       &>h4{
-                                        &>span{
-                                            color: $cvert;
+                                    &>#adresse-responsive {
+                                        width: 150px;
+                                        text-align: center;
+
+                                        &>h4 {
+                                            &>span {
+                                                color: $cvert;
+                                            }
                                         }
-                                       }
 
-                                       &>p{
-                                        color: white;
-                                        font-weight: bold;
-                                       }
+                                        &>p {
+                                            color: white;
+                                            font-weight: bold;
+                                        }
                                     }
-                                
+
                                 }
-                                   
-                     
+
+
                             }
                         }
                     }
@@ -953,30 +1017,87 @@ button {
 
                     &>img {
                         display: none;
-                        
+
                     }
                 }
             }
         }
 
+        &>#bouton-slider-accueil{
+            display: none;
+        }
+
         &>#presentation {
             width: 100%;
             display: flex;
+            flex-direction: column;
             background-image: url('../img/brown-point-fond.png');
             margin-top: 50px;
 
             &>#bio {
-                width: 50%;
-                border: 1px solid $cvert;
+                width: 100%;
+                height: 100%;
 
+                display: flex;
+                border-top: 1px solid $cvert;
+                //border-bottom: 0.5px solid $cvert;
+                border-left: 1px solid $cvert;
+                border-right: 1px solid $cvert;
+                animation: slide-left 5s ease both;
+                background-image: url('../img/brown-point-fond.png');
                 &>#prez {
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+font-size: 1.2rem;
                     color: $cvert;
+                    padding: 15px;
                 }
             }
 
             &>#illustrations {
-                width: 50%;
-                border: 1px solid $cvert;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                //border-top: 0.5px solid $cvert;
+                border-left: 1px solid $cvert;
+                border-bottom: 1px solid $cvert;
+                border-right: 1px solid $cvert;
+                animation: slide-right 5s ease both;
+                background-image: url('../img/brown-point-fond.png');
+
+                &>#illustration-presentation-haut {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-evenly;
+
+                    &>img {
+                        width: 150px;
+                        padding-top: 25px;
+                        
+                    }
+                }
+
+                &>#cubix {
+                    width: 100px;
+                    height: 100px;
+                    background-color: $cvert;
+                    display: flex;
+
+                }
+
+                &>#illustration-presentation-bas {
+                    display: flex;
+
+                    &>img {
+                        width: 150px;
+                        padding-bottom: 25px;
+                    }
+                }
+
+
 
 
             }
