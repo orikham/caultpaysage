@@ -451,6 +451,133 @@ button {
       transform: translateX(0);
     }
   }
+  /*section-prestation*/
+  #prestation > #interface-prestation {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes {
+    display: flex;
+    flex-direction: column;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > .squelette-interface-prestation {
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > .squelette-interface-prestation > h3 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    border-radius: 100px;
+    background-color: #f1f0f0;
+    text-transform: capitalize;
+    color: #89601e;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > .squelette-interface-prestation > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > .squelette-interface-prestation > ul > li {
+    background-color: #367433;
+    border-radius: 100px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > .squelette-interface-prestation > ul > li > a {
+    padding: 5px;
+    font-size: 1rem;
+    color: #f1f0f0;
+    text-transform: uppercase;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #equipement {
+    background-image: url(../img/prestation/equipement.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #pelouse {
+    background-image: url(../img/prestation/pelouse.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #amenagement {
+    background-image: url(../img/prestation/amenagement.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #arbuste {
+    background-image: url(../img/prestation/arbuste.jpg);
+    background-size: cover;
+    height: 450px;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #jardin {
+    background-image: url(../img/prestation/jardin.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #entretien {
+    background-image: url(../img/prestation/entretien.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #haie {
+    background-image: url(../img/prestation/haie.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #gestion-dechet {
+    background-image: url(../img/prestation/gestion-des-dechets.jpg);
+    background-size: cover;
+  }
+  /*section-paysagisme*/
+  #paysagisme > #derniers-articles {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #paysagisme > #derniers-articles > .article-card {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #367433;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 10px 10px #89601e;
+  }
+  #paysagisme > #derniers-articles > .article-card > h3 {
+    padding: 5px;
+    color: #367433;
+    font-size: 1.4rem;
+  }
+  #paysagisme > #derniers-articles > .article-card > h4 {
+    padding: 5px;
+    color: #367433;
+    font-size: 1.3rem;
+  }
+  #paysagisme > #derniers-articles > .article-card > img {
+    width: 300px;
+    border-radius: 10px;
+  }
+  #paysagisme > #derniers-articles > .article-card > .bouton-voir {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    border-radius: 100px;
+    background-color: #367433;
+    font-size: 1.2rem;
+  }
 }
 /****************CSS*MOBILE****************/
 @media screen and (min-width: 390px) and (max-width: 1200px) {
@@ -533,6 +660,9 @@ button {
     height: 20px;
   }
   /*section-accueil*/
+  #accueil {
+    width: 390px;
+  }
   #accueil > .carousel-content {
     width: 100%;
   }
@@ -763,5 +893,92 @@ button {
   #accueil > #presentation > #illustrations > #illustration-presentation-bas > img {
     width: 150px;
     padding-bottom: 25px;
+  }
+  /*section-prestation*/
+  #prestation > #interface-prestation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes {
+    display: flex;
+    flex-direction: column;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > .squelette-interface-prestation {
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > .squelette-interface-prestation > h3 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    border-radius: 100px;
+    background-color: #f1f0f0;
+    text-transform: capitalize;
+    color: #89601e;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > .squelette-interface-prestation > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > .squelette-interface-prestation > ul > li {
+    background-color: #367433;
+    border-radius: 100px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > .squelette-interface-prestation > ul > li > a {
+    padding: 5px;
+    font-size: 1rem;
+    color: #f1f0f0;
+    text-transform: uppercase;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #equipement {
+    background-image: url(../img/prestation/equipement.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #pelouse {
+    background-image: url(../img/prestation/pelouse.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #amenagement {
+    background-image: url(../img/prestation/amenagement.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #arbuste {
+    background-image: url(../img/prestation/arbuste.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #jardin {
+    background-image: url(../img/prestation/jardin.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #entretien {
+    background-image: url(../img/prestation/entretien.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #haie {
+    background-image: url(../img/prestation/haie.jpg);
+    background-size: cover;
+  }
+  #prestation > #interface-prestation > .interface-prestation-colonnes > #gestion-dechet {
+    background-image: url(../img/prestation/gestion-des-dechets.jpg);
+    background-size: cover;
   }
 }/*# sourceMappingURL=caultpaysages.css.map */

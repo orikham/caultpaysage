@@ -1,3 +1,4 @@
+/**********HEADER-JS**********/
 //menus burger
 document.addEventListener("DOMContentLoaded", function(){
   const svg = document.getElementById("svg-header");
@@ -13,6 +14,7 @@ svg.addEventListener("click",() =>{
 })
 
 
+/**********JS-SECTION-ACCUEIL**********/
 //slider de l'accueil
 document.addEventListener("DOMContentLoaded", function() {
     
@@ -76,6 +78,9 @@ window.addEventListener("scroll", function(){
     document.getElementById("bio").classList.toggle("gauche");
   }
 });
+
+
+/**********JS-SECTION-PRESTATION**********/
 
 
   

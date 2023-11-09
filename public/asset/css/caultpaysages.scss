@@ -249,6 +249,7 @@ button {
                         padding: 15px;
                         font-weight: bolder;
                         font-size: 1.2rem;
+                        
 
                         &>strong {
 
@@ -640,6 +641,177 @@ font-size: 1.2rem;
 
     }
 
+    /*section-prestation*/
+    #prestation{
+        &>#interface-prestation{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+            &>.interface-prestation-colonnes{
+                display: flex;
+                flex-direction: column;
+
+                &>.squelette-interface-prestation{
+                    width: 400px;
+                    height: 200px;
+                    align-items: center;
+                    text-align: center;
+                    margin: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    &>h3{    
+                       padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.2rem;
+                        opacity: 0.8;
+                        border-radius: 100px;
+                        background-color: $fond;
+                        text-transform: capitalize;
+                        color: $cmarron;
+                    }
+
+                    &>ul{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+
+                        &>li{
+                            
+                            background-color: $cvert;
+                            border-radius: 100px;
+                            margin: 5px;
+                            display: flex;
+                            justify-content: center;
+                        align-items: center;
+                        opacity: 0.9;
+
+                            &>a{
+                                padding: 5px;
+                                font-size: 1rem;
+                                color: $fond;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+
+                &>#equipement{
+                   
+                    background-image: url(../img/prestation/equipement.jpg);
+                    background-size: cover;
+
+                    
+                }
+
+                &>#pelouse{
+                    
+                    background-image:url(../img/prestation/pelouse.jpg);
+                    background-size: cover;
+                }
+
+                &>#amenagement{
+                   
+                    background-image:url(../img/prestation/amenagement.jpg);
+                    background-size: cover;
+                }
+        
+                &>#arbuste{
+                   
+                    background-image: url(../img/prestation/arbuste.jpg);
+                    background-size: cover;
+                    height: 450px;
+
+                    
+                }
+
+                &>#jardin{
+                    
+                    background-image:url(../img/prestation/jardin.jpg);
+                    background-size: cover;
+                }            
+         
+                &>#entretien{
+                   
+                    background-image: url(../img/prestation/entretien.jpg);
+                    background-size: cover;
+
+                    
+                }
+
+                &>#haie{
+                    
+                    background-image:url(../img/prestation/haie.jpg);
+                    background-size: cover;
+                }
+
+                &>#gestion-dechet{
+                   
+                    background-image:url(../img/prestation/gestion-des-dechets.jpg);
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    /*section-paysagisme*/
+    #paysagisme{
+
+        &>#derniers-articles{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            &>.article-card{
+                width: 300px;
+                margin: 10px;
+                border: 1px solid $cvert;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow:  1px 1px 10px 10px $cmarron;
+               
+                &>h3{
+                    padding: 5px;
+                    color: $cvert;
+                    font-size: 1.4rem;
+
+                }
+                &>h4{
+                    padding: 5px;
+                    color: $cvert;
+                    font-size: 1.3rem;
+                }
+                &>img{
+                    width: 300px;
+                    border-radius: 10px;
+                }
+
+                
+                &>.bouton-voir{
+                    margin: 5px;
+                    padding: 5px;
+                    color: white;
+                    border-radius: 100px;
+                    background-color: $cvert;
+                    font-size: 1.2rem;
+                }
+
+            }
+
+            
+        }
+    }
+
 }
 
 /****************CSS*MOBILE****************/
@@ -769,6 +941,7 @@ font-size: 1.2rem;
 
     /*section-accueil*/
     #accueil {
+        width: 390px;
 
         &>.carousel-content {
             width: 100%;
@@ -1100,6 +1273,126 @@ font-size: 1.2rem;
 
 
 
+            }
+        }
+    }
+
+    /*section-prestation*/
+    #prestation{
+        &>#interface-prestation{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &>.interface-prestation-colonnes{
+                display: flex;
+                flex-direction: column;
+
+                &>.squelette-interface-prestation{
+                    width: 400px;
+                    height: 200px;
+                    align-items: center;
+                    text-align: center;
+                    margin: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    &>h3{    
+                       padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.2rem;
+                        opacity: 0.8;
+                        border-radius: 100px;
+                        background-color: $fond;
+                        text-transform: capitalize;
+                        color: $cmarron;
+                    }
+
+                    &>ul{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+
+                        &>li{
+                            
+                            background-color: $cvert;
+                            border-radius: 100px;
+                            margin: 5px;
+                            display: flex;
+                            justify-content: center;
+                        align-items: center;
+                        opacity: 0.9;
+
+                            &>a{
+                                padding: 5px;
+                                font-size: 1rem;
+                                color: $fond;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+
+                &>#equipement{
+                   
+                    background-image: url(../img/prestation/equipement.jpg);
+                    background-size: cover;
+
+                    
+                }
+
+                &>#pelouse{
+                    
+                    background-image:url(../img/prestation/pelouse.jpg);
+                    background-size: cover;
+                }
+
+                &>#amenagement{
+                   
+                    background-image:url(../img/prestation/amenagement.jpg);
+                    background-size: cover;
+                }
+        
+                &>#arbuste{
+                   
+                    background-image: url(../img/prestation/arbuste.jpg);
+                    background-size: cover;
+                    
+
+                    
+                }
+
+                &>#jardin{
+                    
+                    background-image:url(../img/prestation/jardin.jpg);
+                    background-size: cover;
+                }            
+         
+                &>#entretien{
+                   
+                    background-image: url(../img/prestation/entretien.jpg);
+                    background-size: cover;
+
+                    
+                }
+
+                &>#haie{
+                    
+                    background-image:url(../img/prestation/haie.jpg);
+                    background-size: cover;
+                }
+
+                &>#gestion-dechet{
+                   
+                    background-image:url(../img/prestation/gestion-des-dechets.jpg);
+                    background-size: cover;
+                }
             }
         }
     }
