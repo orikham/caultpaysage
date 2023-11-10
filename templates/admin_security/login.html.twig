@@ -1,0 +1,22 @@
+{# templates/admin_security/login.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminSecurityController!
+{% endblock %}
+
+{% block body %}
+	{% block content %}
+		<h2>Connexion</h2>
+
+		{{ form_start(form) }}
+		{{ form_row(form.pseudo) }}
+		{{ form_row(form.password) }}
+		<button type="submit">Se connecter</button>
+		{{ form_end(form) }}
+
+		{% if error %}
+			<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData) }}</div>
+		{% endif %}
+	{% endblock %}
+{% endblock %}

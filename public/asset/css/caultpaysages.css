@@ -578,6 +578,46 @@ button {
     background-color: #367433;
     font-size: 1.2rem;
   }
+  /*section-paysagisme*/
+  #amenagement > #derniers-articles-amenagement {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #amenagement > #derniers-articles-amenagement > .amenagement-article-card {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #367433;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 10px 10px #89601e;
+  }
+  #amenagement > #derniers-articles-amenagement > .amenagement-article-card > h3 {
+    padding: 5px;
+    color: #367433;
+    font-size: 1.4rem;
+  }
+  #amenagement > #derniers-articles-amenagement > .amenagement-article-card > h4 {
+    padding: 5px;
+    color: #367433;
+    font-size: 1.3rem;
+  }
+  #amenagement > #derniers-articles-amenagement > .amenagement-article-card > img {
+    width: 300px;
+    border-radius: 10px;
+  }
+  #amenagement > #derniers-articles-amenagement > .amenagement-article-card > .bouton-voir {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    border-radius: 100px;
+    background-color: #367433;
+    font-size: 1.2rem;
+  }
 }
 /****************CSS*MOBILE****************/
 @media screen and (min-width: 390px) and (max-width: 1200px) {

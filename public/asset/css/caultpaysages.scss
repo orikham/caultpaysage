@@ -552,7 +552,7 @@ button {
             &>#bio {
                 width: 50%;
                 height: 100%;
-
+                
                 display: flex;
                 border-top: 1px solid $cvert;
                 border-bottom: 1px solid $cvert;
@@ -576,7 +576,8 @@ button {
                     text-align: center;
                     display: flex;
                     align-items: center;
-font-size: 1.2rem;
+                    font-size: 1.2rem;
+                    
                     color: $cvert;
                 }
             }
@@ -771,6 +772,58 @@ font-size: 1.2rem;
             justify-content: space-evenly;
 
             &>.article-card{
+                width: 300px;
+                margin: 10px;
+                border: 1px solid $cvert;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow:  1px 1px 10px 10px $cmarron;
+               
+                &>h3{
+                    padding: 5px;
+                    color: $cvert;
+                    font-size: 1.4rem;
+
+                }
+                &>h4{
+                    padding: 5px;
+                    color: $cvert;
+                    font-size: 1.3rem;
+                }
+                &>img{
+                    width: 300px;
+                    border-radius: 10px;
+                }
+
+                
+                &>.bouton-voir{
+                    margin: 5px;
+                    padding: 5px;
+                    color: white;
+                    border-radius: 100px;
+                    background-color: $cvert;
+                    font-size: 1.2rem;
+                }
+
+            }
+
+            
+        }
+    }
+
+    /*section-paysagisme*/
+    #amenagement{
+
+        &>#derniers-articles-amenagement{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            &>.amenagement-article-card{
                 width: 300px;
                 margin: 10px;
                 border: 1px solid $cvert;
