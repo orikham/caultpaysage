@@ -892,6 +892,14 @@ button {
     animation: slide-left 5s ease both;
     background-image: url("../img/brown-point-fond.png");
   }
+  @keyframes slide-left {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
   #accueil > #presentation > #bio > #prez {
     text-align: center;
     display: flex;
@@ -911,6 +919,14 @@ button {
     border-right: 1px solid #367433;
     animation: slide-right 5s ease both;
     background-image: url("../img/brown-point-fond.png");
+  }
+  @keyframes slide-right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
   #accueil > #presentation > #illustrations > #illustration-presentation-haut {
     display: flex;

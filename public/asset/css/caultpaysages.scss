@@ -1271,6 +1271,17 @@ button {
                 border-right: 1px solid $cvert;
                 animation: slide-left 5s ease both;
                 background-image: url('../img/brown-point-fond.png');
+
+                @keyframes slide-left {
+                    0% {
+                        transform: translateX(-100%);
+                    }
+
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+
                 &>#prez {
                     text-align: center;
                     display: flex;
@@ -1294,14 +1305,26 @@ font-size: 1.2rem;
                 animation: slide-right 5s ease both;
                 background-image: url('../img/brown-point-fond.png');
 
+                @keyframes slide-right {
+                    0% {
+                        transform: translateX(100%);
+                    }
+
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+
                 &>#illustration-presentation-haut {
                     display: flex;
                     width: 100%;
                     justify-content: space-evenly;
+                    
 
                     &>img {
                         width: 150px;
                         padding-top: 25px;
+                        
                         
                     }
                 }
