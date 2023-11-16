@@ -5,8 +5,25 @@
 
 {% block body %}
 	{% block content %}
+		<!-- Fil d'Ariane -->
+		<nav aria-label="Fil d'Ariane">
+			<ol>
+				<!-- Lien vers la page d'accueil ou racine du site -->
+				<li>
+					<a href="{{ path('app_home_page') }}">CaultPaysages</a>
+				</li>
 
-	<a href="{{ path('admin_login') }}">testadmin</a>
+				<!-- Lien vers la page actuelle (pagedusite) -->
+				
+
+				<!-- Lien vers l'onglet actuel (ongletdelapagedusiteselectionner) -->
+				<li aria-current="app_home_page">Accueil</li>
+			</ol>
+		</nav>
+		<a href="{{ path('app_login') }}">devenir riche</a>
+		<form method="post" action="{{ path('app_logout') }}">
+			<button type="submit">couic le compte</button>
+		</form>
 
 		<section id="accueil" class="row-limit-size">
 

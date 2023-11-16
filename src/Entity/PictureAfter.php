@@ -2,11 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\PaysagismeRepository;
+use App\Repository\PictureAfterRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: PaysagismeRepository::class)]
-class Paysagisme
+#[ORM\Entity(repositoryClass: PictureAfterRepository::class)]
+class PictureAfter
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -16,8 +16,8 @@ class Paysagisme
     #[ORM\Column(length: 255)]
     private ?string $name = null;
 
-    #[ORM\ManyToOne(inversedBy: 'pay')]
-    private ?Prestation $prestation = null;
+    #[ORM\ManyToOne(inversedBy: 'PiAf')]
+    private ?Articles $articles = null;
 
     public function getId(): ?int
     {
@@ -36,14 +36,14 @@ class Paysagisme
         return $this;
     }
 
-    public function getPrestation(): ?Prestation
+    public function getArticles(): ?Articles
     {
-        return $this->prestation;
+        return $this->articles;
     }
 
-    public function setPrestation(?Prestation $prestation): static
+    public function setArticles(?Articles $articles): static
     {
-        $this->prestation = $prestation;
+        $this->articles = $articles;
 
         return $this;
     }

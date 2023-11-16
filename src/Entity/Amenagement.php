@@ -2,11 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\PaysagismeRepository;
+use App\Repository\AmenagementRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: PaysagismeRepository::class)]
-class Paysagisme
+#[ORM\Entity(repositoryClass: AmenagementRepository::class)]
+class Amenagement
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -16,7 +16,7 @@ class Paysagisme
     #[ORM\Column(length: 255)]
     private ?string $name = null;
 
-    #[ORM\ManyToOne(inversedBy: 'pay')]
+    #[ORM\ManyToOne(inversedBy: 'ame')]
     private ?Prestation $prestation = null;
 
     public function getId(): ?int

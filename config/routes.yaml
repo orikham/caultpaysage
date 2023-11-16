@@ -2,13 +2,13 @@ controllers:
     resource: ../src/Controller/
     type: attribute
     
-admin_login:
-    path: /admin/login
-    controller: App\Controller\AdminSecurityController::login
+# app_login:
+#     path: /Admin/login
+#     controller: App\Controller\SecurityController::login
 
-admin_logout:
-    path: /admin/logout
-    controller: App\Controller\AdminSecurityController::logout
+# app_logout:
+#     path: /Admin/logout
+#     controller: App\Controller\SecurityController::logout
 
 homepage:
     path: /
